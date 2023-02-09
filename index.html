@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Conway's Game of Life</title>
+</head>
+<body>
+    <canvas id="canvas" height="100" width="100"></canvas>
+    <div id="menu">
+        <div class="menu-item" id="menu-move"><i class="ri-drag-move-line ri-fw"></i></div>
+        <div class="menu-item selected" id="menu-pencil"><i class="ri-edit-2-fill ri-fw"></i></div>
+        <div class="menu-item" id="menu-erase"><i class="ri-eraser-fill ri-fw"></i></div>
+        <div class="menu-divider"></div>
+        <div class="menu-item" id="menu-play"><i class="ri-play-mini-fill ri-fw"></i></div>
+        <div class="menu-item selected" id="menu-pause"><i class="ri-pause-mini-line ri-fw"></i></div>
+        <div class="menu-item" id="menu-stop"><i class="ri-stop-mini-fill ri-fw"></i></div>
+        <div class="menu-divider"></div>
+        <div class="menu-item" id="menu-adjust"><i class="ri-aspect-ratio-line"></i></div>
+        <div class="menu-item" id="menu-random"><i class="ri-shuffle-line ri-fw"></i></div>
+    </div>
+    <script src="scripts/script.js" type="module"></script>
+</body>
+</html>

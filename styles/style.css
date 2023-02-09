@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+canvas {
+    image-rendering: pixelated;
+    position: fixed;
+}
+
+body {
+    background-color: black;
+}
+
+#menu {
+    transform: translateX(-50%);
+    background-color: white;
+    border-radius: .2rem;
+    align-items: center;
+    position: fixed;
+    padding: .8rem;
+    bottom: .8rem;
+    display: flex;
+    gap: .3rem;
+    left: 50%;
+}
+
+.menu-item {
+    background-color: #fff;
+    border-radius: .2rem;
+    place-items: center;
+    height: 1.8rem;
+    width: 1.8rem;
+    display: grid;
+}
+
+.menu-item i {
+    font-size: 1.4rem;
+    place-items: center;
+    display: grid;
+}
+
+#menu-random i {
+    font-size: 1.1rem;
+}
+
+.menu-item:hover, 
+.menu-item.selected {
+    background-color: #D9E3EB;
+}
+
+.menu-item.selected i {
+    color: #0A67D0;
+}
+
+.menu-item.selected::after {
+    background-color: #0A67D0;
+    border-radius: .15rem;
+    position: absolute;
+    height: 0.2rem;
+    width: 1rem;
+    bottom: .4rem;
+    content: '';
+}
+
+.menu-divider {
+    background-color: gray;
+    margin-inline: .25rem;
+    height: 1.2rem;
+    width: .05rem;
+}
